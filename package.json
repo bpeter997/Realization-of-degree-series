@@ -1,0 +1,25 @@
+{
+  "name": "realization-of-degree-series",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpeter997/Realization-of-degree-series.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpeter997/Realization-of-degree-series/issues"
+  },
+  "homepage": "https://github.com/bpeter997/Realization-of-degree-series#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.3"
+  }
+}
