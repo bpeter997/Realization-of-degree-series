@@ -1,6 +1,6 @@
 import fs from "fs";
 
-let data: string = fs.readFileSync("./../degree_series.txt", "utf8");
+let data: string = fs.readFileSync("__dirname/../degree_series.txt", "utf8");
 let tempArray: Array<string> = data.split(",");
 
 let inputArray: Array<number> = tempArray.map((value: string) => +value);

@@ -1,1 +1,1 @@
-start cmd /k node source_code/dist/app.js
+start cmd /k node dist/app.js
