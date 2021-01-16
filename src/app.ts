@@ -1,6 +1,14 @@
 import fs from "fs";
 
-let data: string = fs.readFileSync("__dirname/../degree_series.txt", "utf8");
+let path: string = "";
+
+if (process.argv[2]) {
+  path = process.argv[2].split("=")[1];
+} else {
+  throw new Error("No specified input direction.");
+}
+
+let data: string = fs.readFileSync(path, "utf8");
 let tempArray: Array<string> = data.split(",");
 
 let inputArray: Array<number> = tempArray.map((value: string) => +value);

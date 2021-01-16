@@ -4,7 +4,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
-let data = fs_1.default.readFileSync("__dirname/../degree_series.txt", "utf8");
+let path = "";
+if (process.argv[2]) {
+    path = process.argv[2].split("=")[1];
+}
+else {
+    throw new Error("No specified input direction.");
+}
+let data = fs_1.default.readFileSync(path, "utf8");
 let tempArray = data.split(",");
 let inputArray = tempArray.map((value) => +value);
 let amount = 0;

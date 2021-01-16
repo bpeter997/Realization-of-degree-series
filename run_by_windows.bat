@@ -1,1 +1,1 @@
-start cmd /k node dist/app.js
+start cmd /k node dist/app.js --path=degree_series.txt
