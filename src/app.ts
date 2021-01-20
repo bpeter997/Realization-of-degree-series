@@ -23,7 +23,7 @@ inputArray.forEach((value: number) => {
 console.log(`A sorozat realizálható-e tetszőleges gráffal: ${amount % 2 == 0}`);
 console.log(
   `A sorozat realizálható-e hurokélmentes gráffal: ${
-    amount % 2 == 0 && amount - largestElement > largestElement
+    amount % 2 == 0 && amount - largestElement >= largestElement
   }`
 );
 
